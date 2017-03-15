@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    uHangouts
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Finding things to do on campus just got a whole lot easier with Unviserty Hangouts.">
+  <link rel='stylesheet' href="css/normalize.css">
+  <link rel='stylesheet' href="css/style.css">
+  <link rel='stylesheet' href="css/index.css">
+  <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="http://www.parsecdn.com/js/parse-1.1.14.min.js"></script>
+</head>
+<body>
+
+<!--///////////////////////
+HEADER
+////////////////////////-->
+  <header>
+    <ul>
+          <li role="presentation" id="header_logo"><a href="index.html"><div id="hangouts">uHangouts</div></a></li>
+          <li role="presentation" class="pill"><a href="html/support.html">Support</a></li>    
+          <li role="presentation" class="pill"><a href="html/contact.html">Contact</a></li>
+          <li role="presentation" class="pill"><a href="html/about.html">About</a></li> 
+    </ul>
+  </header>
+
+<div id="fullJumbotron">
+<div id="alignJumbotron">
+<!--///////////////////////
+Jumbotron
+////////////////////////-->
+  <div class="jumbotron">
+    <!-- <h1>Connect with new people while enjoying the same activities.</h1> -->
+    <!-- <h1>Join any activity posted by a student or organization on campus.</h1> -->
+    <!-- <h1>Where joining and creating activities is easy.</h1> -->
+    <h1>Finding things to do on campus just got a whole lot easier with Unviserty Hangouts.</h1>
+  </div>
+
+<!--///////////////////////
+Sign in
+////////////////////////--> 
+  <form class="signIn">
+    <div class="container">
+     <label for="inputUsername" class="control-label">Sign into your uHangouts account.</label>
+     <span id="errorSpan">Invalid username or password</span>
+     <span id="errorSignOut"><u>Sign Out</u></span>
+      <div class="">
+        <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="user_name">
+      </div>
+
+    <label for="inputPassword" class="control-label"></label>
+      <div class="">
+          <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="user_password">
+      </div>
+      <div>  
+      <input id='signInButton' type="button" value="Sign In">
+      <a href="html/signUp.html"><input id='signUpButton' type="button" value="Sign Up Page"></a>
+      <div style="display: inline-block;"><a id="passwordChange" href="html/changePassword.html">Forgot your password?</a></div>
+    </div>
+   </div>   
+  </form>
+</div> <!-- End of alignJumbotron -->
+</div> <!-- End of fullJumbotron -->
+
+   <div class="transition"></div>
+
+<!--///////////////////////
+CONTNET
+////////////////////////-->
+   <ul class="content">
+     <li>
+      <h2>Make a Hangout</h2>
+      <p>Fill up a group or event by inviting your fellow students.</p>
+     </li>
+     <li>
+      <h2>Stay in the Loop</h2>
+      <p>Know more about whats going on around campus.</p>
+     </li>
+     <li>
+      <h2>Join a Hangout</h2>
+      <p>Join in on the activities you enjoy doing.</p>
+     </li>
+   </ul>
+
+<!--///////////////////////
+FOOTER
+////////////////////////-->
+   <footer>
+     <ul>
+      <li><a href="html/about.html">About</a></li>
+      <li><a href="html/advertise.html">Advertise</a></li>
+      <li><a href="html/contact.html">Contact</a></li>
+      <li><a href="html/hire.html">Hire</a></li>
+      <li><a href="html/support.html">Support</a></li>
+      <li><a href="html/terms.html">Terms</a></li>
+     </ul>
+   </footer>
+   
+   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+   <script text="text/javascript" src="js/parseSignIn.js"></script>
+</body>
+</html>

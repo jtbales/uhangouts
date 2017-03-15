@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    uHangouts
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href="../css/normalize.css">
+  <link rel="stylesheet" href="../plugin/font-awesome.min.css">
+  <link rel="stylesheet" href="../plugin/jquery.mmenu.all.css" />
+  <link rel='stylesheet' href="../plugin/magnific-popup.css">
+  <link rel="stylesheet" href="../plugin/venobox/venobox.css" media="screen" />
+  <link rel='stylesheet' href="../plugin/iosOverlay.css">
+  <link rel='stylesheet' href="../plugin/sweetalert.css">
+  <link rel='stylesheet' href="../css/userStyle.css">
+  <link rel="icon" type="image/ico" href="../img/favicon.ico"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+  <script src="../js/allUsers.js"></script>
+  <script src="../js/render/renderNavs.js"></script>
+  <script src="../js/features/imageUpload.js"></script>
+  <script src="../js/render/renderHangout.js"></script>
+  <script src="../js/features/postHangout.js"></script>
+  <script src="../js/features/editHangout.js"></script>
+  <script src="../js/features/joinHangout.js"></script>
+  <script src="../js/pages/announcements.js"></script>
+</head>
+<body>
+
+<!--///////////////////////
+HEADER
+////////////////////////-->
+<div id="page"> <!-- For mmenu's use -->
+<!-- mmenu goes here -->
+<!-- Header goes here -->
+<div id="allWrappers">
+<div id="wrapper">
+  <!-- Selection Menu goes here -->
+  <div id="selectionDivSpace"></div>
+
+<!--///////////////////////
+Start of Feed Post
+Create Hangout
+////////////////////////-->
+  <div id="feedDiv">
+
+  <div id="createHangoutOpen" style="background-color: #5A3584;">
+    <h2>Announcement <i class="fa fa-plus fa-fw"></i></h2>
+  </div>
+
+
+  <div id="createHangoutDiv">
+    <div id="createHangoutTitle">
+      <h3>Create Announcement</h3>
+    </div>
+    <table id="createHangoutTable">
+      <tbody>
+        <tr class="createHangoutRow">
+          <th class="label">
+            <label for="title">Title <span data="50"></span></label>
+          </th>
+          <td class="data">
+            <input id="title" name="title" type="text" class="input">
+          </td>
+        </tr>
+        <tr class="createHangoutRow">
+          <th class="label">
+            <label for="details">Details <span data="180"></span></label>
+          </th>
+          <td class="data">
+            <textarea rows="3" id="details" name="details" class="input"></textarea>
+          </td>
+        </tr>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="createHangoutButtons">
+      <button id="createHangoutCancel">Cancel</button>
+      <button id="createHangoutSubmit">Create</button>
+    </div>
+  </div> <!-- End of createHangoutDiv -->
+
+  <span id="loadingDivs">
+    <div class="postDiv">
+      <h3 class="postTitle"><i class="fa fa-spinner fa-pulse fa-fw"></i> Loading Announcements...</h3>
+      <div class="rowPair">
+        <h5>All</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>the</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>good</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>stuff.</h5>
+        <div class="longGrey"></div>
+      </div>
+    </div>
+    <div class="postDiv">
+      <h3 class="postTitle"><i class="fa fa-spinner fa-pulse fa-fw"></i> Loading Announcements...</h3>
+      <div class="rowPair">
+        <h5>All</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>the</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>good</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>stuff.</h5>
+        <div class="longGrey"></div>
+      </div>
+    </div>
+    <div class="postDiv">
+      <h3 class="postTitle"><i class="fa fa-spinner fa-pulse fa-fw"></i> Loading Announcements...</h3>
+      <div class="rowPair">
+        <h5>All</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>the</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>good</h5>
+        <div class="longGrey"></div>
+      </div>
+      <div class="rowPair">
+        <h5>stuff.</h5>
+        <div class="longGrey"></div>
+      </div>
+    </div>
+  </span>
+
+  <!-- Post will append here ********************-->
+  <span id="postSpan"></span>
+
+  </div> <!-- End of feedDiv -->
+
+</div> <!-- End of Wrapper -->
+
+<div id="sideWrapper">
+  <div id="billboard">
+    <ul id="announcements"></ul>
+  </div>
+</div>
+
+</div> <!-- allWrappers -->
+</div> <!-- page -->
+  <script src="../plugin/jquery.mmenu.min.all.js" type="text/javascript"></script>
+  <script src="../plugin/jquery.magnific-popup.min.js" type="text/javascript"></script>
+  <script src="../plugin/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../plugin/sweetalert.min.js" type="text/javascript"></script>
+  <script src="../plugin/venobox/venobox.min.js" type="text/javascript"></script>
+  <script src="../plugin/iosOverlay.js"></script>
+</body>
+</html>

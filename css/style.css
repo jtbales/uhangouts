@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+}
+
+a:hover {
+	transition: all 200ms linear;
+}
+
+/* UMHB Colors
+#372155 Dark Purple
+#5A3584 Purple
+#333 Black
+#eee white
+text-shadow: 0px 1px 1px #49286f;
+#ffca38 gold
+#d09b0a purplish gold
+
+Other colors
+#BDA0CB light purple
+#f1e0fd ( <- lighter) ecd6fd purplish white
+#bdaecd background purple
+#eee6ed really light background
+
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+*/
+
+
+/*******************************
+HEADER 
+*******************************/
+
+header {
+	background-color: #372155;
+	border-bottom: solid 2px #ddd;
+	z-index: 100;
+}
+
+header ul {
+	list-style: none;
+	padding: 10px 15px;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+header ul li a{
+	display: inline-block;
+	height: 45px;
+	padding: 5px;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+header:after { 
+   content: "";
+   display: block; 
+   clear: both;
+}
+
+#header_logo {
+	float: left;
+	font-size: 1.25em;
+	padding: 5px 0 10px 0;
+	margin-top: -16px;
+	font-weight: bold;
+}
+#header_logo a {
+	color: #eee;
+}
+#header_logo div {
+	display: inline-block;
+	background-color: #5A3584;
+	color: #ffca38;
+	padding: 8px 5px;
+	border-radius: 10px 2px;
+	border-top: solid 2px white;
+}
+#header_logo div:hover {
+	box-shadow: 0 0 6px 3px white;	
+	transition: all 400ms linear;
+}
+
+.pill {
+	float: right;
+}
+.pill a {
+	color: #eee;
+	font-size: 1em;
+	font-weight: bold;
+}
+.pill>a:hover {
+	color: #ffca38;
+}
+
+/*Small screen */
+@media screen and (max-width: 450px) {
+	#header_logo {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-top: -10px;
+		margin-bottom: 10px;
+	}
+	.pill {
+		float: right;
+		width: 33.33%;
+		text-align: center
+	}
+}
+
+/*Medium Screen */
+@media screen and (min-width: 596px) {
+	.pill {
+		margin: 0 5px;
+	}
+}
+
+
+
+/*******************************
+FOOTER
+*******************************/
+
+footer {
+	padding: 0 30px 20px;
+	height: 100%;
+	width: 100%;
+}
+
+footer ul {
+	list-style: none;
+	text-align: center;
+}
+footer li {
+	display: inline-block;
+	font-size: 1.25em;
+	margin: 0 1% 20px;
+}
+footer li a {
+	color: #aaa;
+}
+footer li a:hover {
+	color: #444;
+}
+
+
+

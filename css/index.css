@@ -1,0 +1,310 @@
+body {
+	background-color: #f1e0fd;
+}
+
+header ul {
+	max-width: 1350px;
+}
+
+/*******************************
+Jumbotron
+*******************************/
+
+.jumbotron {
+/*	background: linear-gradient(to top, #ecd6fd, #5A3584);*/
+	background-color: #5A3584;
+	height: auto;
+}
+.jumbotron h1 {
+	color: white;
+	text-shadow: 0px 0px 7px #000000;
+	width: 80%;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	margin: 0 10% 0 10%;
+	font-size: 3em;
+	border-bottom: solid white 3px;
+	max-width: 810px;
+}
+
+/*Extra Small screen*/
+@media screen and (max-width: 380px) {
+	.jumbotron h1 {
+		font-size: 2.125em;
+	}
+}
+
+/*Small screen*/
+@media screen and (min-width: 381px) and (max-width: 453px) {
+	.jumbotron h1 {
+		font-size: 2.5em;
+	}
+}
+
+/*Large screen */
+@media screen and (min-width: 1012px) {
+	.jumbotron {
+		display: inline-block;
+		width: 60%;
+		margin: 0;
+		float: left;
+		height: 500px; /*285*/
+	}	
+	.jumbotron h1 {
+		width: 90%;
+		border-bottom: none;
+		border-right: solid white 3px;
+		padding: 0 2% 0 0;
+		margin: 40px 5% 50px 0;
+		font-size: 3em;
+		float: right;
+	}
+}
+
+/*Extre Large screen */
+@media screen and (min-width: 2700px) {
+	.jumbotron {
+		width: 57%;
+	}
+	.jumbotron h1 {
+
+	}
+}
+
+/*******************************
+Sign in
+*******************************/
+.signIn {
+	height: auto;
+	background-color: #5A3584;
+	padding-top: 40px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 0px 0px 7px #000000;
+}
+
+.signIn:after { 
+   content: "";
+   display: block; 
+   clear: both;
+}
+
+#rememberMe_label {
+	font-size: .75em;
+/*	text-shadow: none;*/
+}
+
+.signIn .container {
+	width: 80%;
+	margin: 0 50px;
+	max-width: 480px;
+	float: left;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 0px 12px;
+	margin: 5px 0 10px 0;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+#signInButton /*button */ {
+	padding: 6px 30px;
+	font-size: .6em;
+	border-radius: 4px; 
+	font-weight: 500;
+	background-color: #ffca38;
+}
+
+#signInButton:hover {
+	background-color: #d09b0a;
+}
+
+#signUpButton /*button */ {
+	padding: 4px 6px;
+	font-size: .6em;
+	border-radius: 4px; 
+	font-weight: 500;
+	background-color: #5A3584;
+	border: 2px solid #ffca38;
+	color: #ffca38;
+}
+
+#signUpButton:hover {
+	border-color: #d09b0a;
+	color: #d09b0a;
+}
+
+#passwordChange {
+	font-size: 14px;
+	font-weight: normal;
+	color: white;
+	margin-left: 15px;
+}
+
+#passwordChange:hover {
+	text-decoration: underline;
+}
+
+/*Large screen */
+@media screen and (min-width: 1012px) {
+	.signIn {
+		float: right;
+		width: 40%;
+		display: inline-block;
+		margin: 0;
+		box-sizing: content-box;
+		height: 460px; /*245*/
+	}
+}
+
+/*Small and Medium*/
+@media screen and (max-width: 1011px) {
+	.signIn .container {
+		padding-bottom: 30px;		
+		border-bottom: solid white 3px;
+		margin: 0 10%;
+	}
+	.signIn {
+		padding-bottom: 10px;
+	}
+}
+
+/*Extre Large screen */
+@media screen and (min-width: 2700px) {
+	.signIn {
+		width: 43%;
+		padding-bottom: 10px;
+	}
+}
+
+#errorSpan {
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: none;
+  text-align: center;
+  background-color: rgba(256, 0, 0, .8);
+  display: block;
+  padding: 3px;
+  margin: 5px 0 15px 0;
+  border-radius: 3px;
+  display: none;
+}
+
+#errorSignOut {
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: none;
+  text-align: center;
+  background-color: rgb(255, 165, 0);
+  display: block;
+  width: 150px;
+  padding: 6px;
+  margin: 5px auto 15px;
+  border-radius: 3px;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+/*******************************
+TRANSITION
+*******************************/	
+
+.transition {
+	width:auto;
+	margin: 500px 0 0 0; /*285*/
+	height: 300px; 
+	background: linear-gradient(to top, #f1e0fd, #5A3584);
+}
+
+/*Small Screen*/
+@media screen and (max-width: 555px) {
+	.transition {
+		margin: 0 0 0 0;
+		height: 100px;
+	}
+}
+
+/*Medium Screen*/
+@media screen and (max-width: 1011px) and (min-width: 556px) {
+	.transition {
+		margin: 0 0 0 0;
+		height: 200px;
+	}
+}
+
+/*******************************
+SECONDARY CONTENT
+*******************************/
+
+/*Small Screen*/
+@media screen and (max-width: 555px) {
+	.content {
+		margin: 0 0 0 0;
+		background-color: #f1e0fd;
+	}
+
+	.content li {
+		list-style: none;
+		height: auto;
+		width: 96%;
+		margin: 0 2%; 
+		padding: 10% 0;
+		color: #372155;
+		font-size: 1.5em;
+		text-shadow: 0px 0px 7px #ecd6fd;
+		text-align: center;
+		border-top: solid 3px #5A3584;
+	}
+
+	.content h2 {
+/*		border-bottom: solid 3px #5A3584;*/
+		padding-bottom: 10px;
+	}
+
+	.content li:first-child {
+		border-top: none; 
+	}
+
+}
+
+/*Medium Screen*/
+@media screen and (min-width: 556px) {
+	.content {
+		margin: -50px 0 0 0;
+	}
+
+	.content li {
+		list-style: none;
+		height: auto;
+		width: 80%;
+		margin: 0 10%; 
+		padding: 10% 0;
+		color: #5A3584;
+		font-size: 1.5em;
+		text-shadow: 0px 0px 7px #ecd6fd;
+		text-align: center;
+		border-top: solid 3px #5A3584;
+	}
+
+	.content h2 {
+/*		border-bottom: solid 3px #5A3584;*/
+		padding-bottom: 10px;
+	}
+
+	.content li:first-child {
+		border-top: none; 
+	}
+
+}

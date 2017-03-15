@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    User Template
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href="../css/icon.css">
+  <link rel='stylesheet' href="../css/normalize.css">
+  <link rel='stylesheet' href="../css/userStyle.css">
+  <link rel="icon" type="image/ico" href="../img/favicon.ico"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.1.14.min.js"></script>
+  <script src="../js/user.js"></script>
+</head>
+<body>
+
+<!--///////////////////////
+HEADER
+////////////////////////-->
+  <header>
+    <ul>
+          <li role="presentation" id="header_logo"><a href="../index.html"><div id="hangouts">uHangouts</div></a></li>
+          <li role="presentation" class="pill" id="openNavigation"><a href="#" class="icono-caretDownSquare" id="downIcon"></a>
+            <div id="navPointer"></div>
+            <div id="navigationMenu">
+              <ul>
+                <li class="menuItem"><a href="../html/about.html">About</a></li>
+                <li class="menuItem"><a href="../html/contact.html">Contact</a></li>
+                <li class="menuItem"><a href="../html/terms.html">Terms</a></li>
+                <li class="menuDivider"></li>
+                <li class="menuItem"><a href="#">My Account</a></li> 
+                <li class="menuItem" id="signOutButton"><a href="#">Sign Out</a></li>               
+              </ul>
+            </div>
+          </li>  
+          <li id="userHello" role="presentation" class="pill"></li>      
+    </ul>
+  </header>
+
+<div id="allWrappers">
+<div id="wrapper">
+<!--///////////////////////
+Selection
+////////////////////////-->
+  <div id="selectionDiv">
+    <ul id="selectionMenu">
+      <li><a href="#">Recent Post</a></li>
+      <li><a href="#">Hangouts Calendar</a></li>
+      <li><a href="#">My Hangouts</a></li>
+    </ul>
+  </div>
+
+<!--///////////////////////
+Start of Feed Post
+Create Hangout
+////////////////////////-->
+  <div id="feedDiv">
+
+  <div id="createHangoutOpen" style="background-color: #228B22;">
+    <h2>Create Hangout +</h2>
+  </div>
+
+  <div id="createHangoutDiv">
+    <div id="createHangoutTitle">
+      <h3>Create Hangout</h3>
+    </div>
+    <table id="createHangoutTable">
+      <tbody>
+        <tr class="createHangoutRow">
+          <th class="label">
+            <label for="activity">Activity</label>
+          </th>
+          <td class="data">
+            <input id="activity" name="activity" type="text" class="input">
+          </td>
+        </tr>
+        <tr class="createHangoutRow">
+          <th class="label">
+            <label for="description">Details</label>
+          </th>
+          <td class="data">
+            <textarea id="description" name="description" class="input"></textarea>
+          </td>
+        </tr>
+        <tr class="createHangoutRow">
+          <th class="label">
+            <label for="date">When</label>
+          </th>
+          <td class="data">
+            <input id="date" name="date" type="date" class="input inlineData">
+            <input id="time" name="time" type="time" class="input inlineData">
+          </td>
+        </tr>
+        <tr class="createHangoutRow">
+          <th class="label">
+            <label for="location">Where</label>
+          </th>
+          <td class="data">
+            <input id="location" name="location" type="text" class="input">
+          </td>
+        </tr>
+        <tr class="createHangoutRow">
+          <th class="label">
+            <label for="size">Size</label>
+          </th>
+          <td class="data">
+            <input id="size" name="size" type="number" class="input">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="createHangoutButtons">
+      <button id="createHangoutCancel">Cancel</button>
+      <button id="createHangoutSubmit">Create</button>
+    </div>
+  </div> <!-- End of createHangoutDiv -->
+
+  <!-- Post will append here ********************-->
+
+  </div> <!-- End of feedDiv -->
+
+</div> <!-- End of Wrapper -->
+
+<div id="sideWrapper">
+  <div id="billboard">
+    <ul>
+      <li>
+        Testing one two three four five six seven eight nine ten 
+      </li>
+      <li>
+        Testing one two three four five six seven eight nine ten 
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div> <!-- allWrappers -->
+
+</body>
+</html>
